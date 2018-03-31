@@ -10,8 +10,8 @@
 ## Team Name:TECHLEADS
 
 ## Team Members :
- ## Gaurav Gupta 
-  `Shivam Dixit
+  Gaurav Gupta 
+  Shivam Dixit
   Sandal Bajaj
   Ayushi
   Anusha Gupta
