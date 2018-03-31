@@ -1,0 +1,9 @@
+.row{
+	margin-top: 8%;
+}
+
+#map{
+   width: 100%;
+   height: 600px;
+   background-color: grey;
+ }

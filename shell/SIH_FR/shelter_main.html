@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shelter Admin</title>
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top ">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+					<a href="#" class="navbar-brand"><i class="fab fa-app-store"></i>-CARE</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li ><a href="shelter.html ">Shelter Homes </a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li ><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
+				</ul>
+			</div>
+		</div>		
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class = "thumbnail">
+					<img  src="photos/sh1.jpg">
+				</div>	
+				<div class="thumbnail">
+					<h3>Shelter:Ujjwal Nivas</h3>
+					<h3>Shelter_id : </h3>
+					<h3>Contact:9784586988</h3>
+					<h3>Address: </h3>
+					<h3>City : </h3>
+					<h3>State :</h3>
+					<h3>Rating : </h3>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div id="map">
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="shelter_main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkEhvvnPU0UcGbxqF2y5aI3vYN1jtBKIE&callback=initMap">
+    </script>
+</html>
