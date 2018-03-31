@@ -1,0 +1,39 @@
+<%include partials/header %>
+
+<br><br>
+
+<div class="ui main text cotainer segemnt">
+  <div class="ui huge header">Edit <%= update.name %></div>
+<form class="ui form" action="/update" method="POST">
+  <div class="field">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Name</label>
+      <input type="email" name="name" class="form-control" id="inputEmail4" value="<%= update.name %>">
+    </div>
+  </div>
+  <div class="field">
+      <label for="inputName">Sex</label>
+      <input type="text" name="sex" class="form-control" id="inputName" value="<%= update.sex %>">
+      <br>
+  </div>
+  <div class="field">
+      <label for="inputName">Date Of Birth</label>
+      <input type="text" name="dateofbirth" class="form-control" id="inputName" value="<%= update.date %> ">
+      <br>
+  </div>
+  
+  <div class="field">
+    <label for="comment">Address</label>
+      <textarea class="form-control" name="address" rows="6" id="comment" placeholder="New Address"></textarea>
+  </div>
+  
+  <div class="field">
+    <div class="form-group col-md-6">
+      <label for="lang">Aadhar Number</label>
+      <input type="text" name="aadhar" class="form-control" id="lang" placeholder="<%= update.aadhar %>">
+    </div>
+  </div>
+  <input class="ui violet big basic button" type="submit">
+</form>
+</div>
+<%include partials/footer %>

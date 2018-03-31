@@ -1,0 +1,40 @@
+<% include ../partials/header %>
+<br><br>
+<br><br>
+<div class="ui main text container">
+    
+	<div id="map"></div>
+</body>
+<script type="text/javascript" src="shelter3.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkEhvvnPU0UcGbxqF2y5aI3vYN1jtBKIE&callback=initMap">
+    </script>
+
+</html>
+    <div> Shelter Homes near you</div>
+    <div>
+        <li><% update.forEach(function(codes){ %>
+                <div class="content">
+                    <a class="header" href="/update/<%= codes.id %>"><%= codes.name %></a>
+                    <div class="meta">
+                        <spam><%= codes.shellid %></spam>
+                    </div>
+                    <div class="meta">
+                        <spam><%= codes.rating %></spam>
+                    </div>
+                    
+                    <div class="extra">
+                        <a class="ui floated basic violet button" href="/update/<%= codes.id %>"><%= codes.name %>
+                            More info
+                            <i class="right chevron icon"></i>
+                        </a>
+                    </div>
+                </div>
+<% }); %></li>
+        </div>
+    </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>
